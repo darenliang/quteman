@@ -1,0 +1,9 @@
+# Exclude conan artifacts
+conan/*
+!conan/conanfile.txt
+
+# Exclude python virtual environments
+venv/
+
+# Exclude build folder
+build/
