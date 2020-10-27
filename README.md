@@ -6,9 +6,10 @@ A simple Postman alternative written in Qt.
 
 Make sure you have the following tools installed before building.
 
-* git
-* python3 with venv and pip
 * gcc or clang with libstdc++11 support
+* qt5
+* python3 with venv and pip
+* git
 
 #### Initialize project:
 
