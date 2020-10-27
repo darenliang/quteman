@@ -7,7 +7,7 @@ A simple Postman alternative written in Qt.
 Make sure you have the following tools installed before building.
 
 * git
-* python3
+* python3 with venv and pip
 * gcc or clang
 
 #### Initialize project:
@@ -21,7 +21,7 @@ git submodule update --init
 #### Build:
 
 ```
-./bootrap.sh
+./bootstrap.sh
 ```
 
 Note that you may be prompted to enter a password to install any required system packages.
