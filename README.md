@@ -8,7 +8,7 @@ Make sure you have the following tools installed before building.
 
 * git
 * python3 with venv and pip
-* gcc or clang
+* gcc or clang with c++11 support
 
 #### Initialize project:
 
