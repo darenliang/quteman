@@ -41,7 +41,7 @@ fi
 # Build deps
 cd conan
 export CONAN_SYSREQUIRES_MODE="enabled"
-conan install . -s compiler.libcxx=libstdc++11 --build=missing -o Qt:shared=False -o Qt:config=-static-runtime
+conan install . -s compiler.libcxx=libstdc++11 --build=missing
 cd ../
 
 # Make build folder
@@ -54,5 +54,12 @@ fi
 
 # Build project
 cd build
-cmake ..
-make
+cmake .. -DCMAKE_INSTALL_PREFIX=/usr
+make -j$(nproc)
+make install DESTDIR=AppDir
+
+# Build AppImage
+wget -N https://github.com/linuxdeploy/linuxdeploy/releases/download/continuous/linuxdeploy-x86_64.AppImage
+wget -N https://github.com/linuxdeploy/linuxdeploy-plugin-qt/releases/download/continuous/linuxdeploy-plugin-qt-x86_64.AppImage
+chmod +x linuxdeploy*.AppImage
+./linuxdeploy-x86_64.AppImage --appdir AppDir --plugin qt --output appimage

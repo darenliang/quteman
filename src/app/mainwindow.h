@@ -6,8 +6,8 @@
 #include <optional>
 #include <cpr/cpr.h>
 
-#include "src/about/about.h"
-#include "lib/QJsonModel/qjsonmodel.h"
+#include "about/about.h"
+#include "../lib/QJsonModel/qjsonmodel.h"
 
 enum RequestType {
     GET = 0,

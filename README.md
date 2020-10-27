@@ -21,7 +21,7 @@ git submodule update --init
 #### Build:
 
 ```
-./boostrap.sh
+./bootrap.sh
 ```
 
 Note that you may be prompted to enter a password to install any required system packages.
@@ -29,7 +29,14 @@ Note that you may be prompted to enter a password to install any required system
 #### Run:
 
 ```
-cd build/bin
-./quteman
+./build/src/bin/quteman
 ```
+
+#### Run AppImage:
+
+```
+./build/Quteman-x86_64.AppImage
+```
+
+Your AppImage name may include a hash like this: `Quteman-61243a3-x86_64.AppImage`.
 

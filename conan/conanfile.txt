@@ -1,5 +1,6 @@
 [requires]
-qt/5.15.1@bincrafters/stable
+qt/5.14.2@bincrafters/stable
+openssl/1.1.1h
 cpr/1.5.0
 
 [generators]
